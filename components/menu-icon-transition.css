@@ -1,0 +1,41 @@
+
+.rotation {
+  text-align: center;
+}
+.inner {
+  margin: 25px;
+  padding: 14px 11px;
+  width: 90px;
+  height: 94px;
+  background-color: blue;
+  text-align: center;
+}
+.inner > div {
+  width: 66px;
+  height: 8px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: transform .5s;
+}
+
+.inner:hover > div.line1 {
+  position: relative;
+  width: 100px;
+  top: 17px;
+  left: -16px;
+  margin-top: 10px;
+  transform: rotate(45deg);
+  
+}
+.inner:hover > div.line2 {
+  display: none;
+}
+.inner:hover > div.line3 {
+  position: relative;
+  width: 100px;
+  top: 0;
+  left: -16px;
+  margin-top: 10px;
+  transform: rotate(135deg);
+}
